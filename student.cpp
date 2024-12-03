@@ -11,7 +11,7 @@ double student_marks[5];
 cout<< "Please enter five students name with their respective mark: ";
 
  for(int i=0; i<5; i++) {
-    cout<< "\nStudent name "<<i+1<<": ";
+    cout<< "Student"<<i+1<<" name: ";
           cin>>student_names[i];
 
    do{ cout<< "\nStudent "<<i+1<<" mark: ";
