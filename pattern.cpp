@@ -3,27 +3,30 @@
 
 using namespace std;
 
-void pattern(int n){
-for(int i=n;i>=1;i--){
- for(int k=n-i;k>0;k--)
-  cout<<" ";
-  for(int j=i;j>0;j--)
-   cout<<"* ";
-   cout<<endl;
+void pattern(){
+int n=5;
+for(int i=n;i>=1;--i){
+ for(int k=i;k<=n;++k){
+  cout<<k<<" ";
 }
-for(int i=2;i<=n;i++){
-    for(int k=n-i;k>0;k--)
-      cout<<" ";
-    for(int j=0;j<i;j++)
-        cout<<"* ";
-        cout<<endl;
+for(int j=n-1;j>=i;--j){
+ cout<<j<<" ";
+}
+cout<<endl;
+}
+for(int i=2;i<=n;++i){
+    for(int k=i;k<=n;++k){
+cout<<k<<" ";
+}
+for(int j=n-1;j>=i;--j){
+    cout<<j<<" ";
+}
+cout<<endl;
 }
 }
 int main() {
-int num;
-cout<<"Enter number of levels of pattern: ";
-cin>>num;
-pattern(num);
+
+pattern();
 
 return 0;
 }
